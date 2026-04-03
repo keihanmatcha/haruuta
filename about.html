@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&family=Rajdhani:wght@500;700&display=swap');
+    :root {
+      --kai-cyan: #4DD7E3;      /* 甲斐田ブルー */
+      --plat-gray: #E5E4E2;     /* プラチナグレー */
+      --kai-navy: #1A2E35;      /* 深い紺 */
+      --text-main: #333333;
+      --card-white: #FFFFFF;
+    }
+
+    body {
+      background-color: var(--plat-gray);
+      background-image: radial-gradient(circle at top, #F2F2F0 0%, var(--plat-gray) 100%);
+      color: var(--text-main);
+      font-family: 'Zen Kaku Gothic New', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      background: var(--card-white);
+      padding: 50px;
+      border-radius: 4px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-top: 6px solid var(--kai-cyan);
+      position: relative;
+      overflow: hidden;
+    }
+
+    h2 {
+      font-family: 'Rajdhani', 'Zen Kaku Gothic New', sans-serif;
+      font-size: 2em;
+      font-weight: 700;
+      color: var(--kai-cyan);
+      margin-top: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 1px;
+    }
+
+    b { color: var(--kai-navy); border-bottom: 2px solid var(--kai-cyan); }
+
+    p {
+      font-size: 1.05em;
+      margin: 20px 0;
+      color: #555;
+    }
+
+    /* リンクボタン */
+    .link-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    .btn-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      background: var(--kai-navy);
+      padding: 15px 25px;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: 0.3s;
+      border-right: 4px solid var(--kai-cyan);
+      font-size: 0.95em;
+    }
+
+    .btn-link:hover {
+      background: var(--kai-cyan);
+      color: var(--kai-navy);
+      transform: translateX(8px);
+    }
+
+    .btn-link span {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.1em;
+      margin-right: 12px;
+      opacity: 0.7;
+    }
+
+    /* Special Thanks セクション */
+    .thanks-box {
+      background: #f8f9fa;
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 4px;
+      margin-top: 30px;
+    }
+
+    .thanks-title {
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      color: var(--kai-navy);
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .thanks-content {
+      font-size: 0.9em;
+      color: #666;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .thanks-content a {
+      color: var(--kai-cyan);
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
+    }
+
+    .thanks-content a:hover {
+      border-bottom: 1px solid var(--kai-cyan);
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #EEE;
+      margin: 30px 0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background: transparent;
+      border: 2px solid var(--kai-navy);
+      color: var(--kai-navy);
+      padding: 10px 30px;
+      cursor: pointer;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      font-size: 1.1em;
+      transition: 0.3s;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .back-btn:hover {
+      background: var(--kai-navy);
+      color: #fff;
+    }
+
+    .decoration {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      font-size: 8em;
+      color: var(--kai-cyan);
+      opacity: 0.05;
+      pointer-events: none;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="decoration">☀️</div>
+    <h2>🔷 ABOUT THIS SITE</h2>
+    
+    <p>当サイトは、にじさんじ所属<b>「甲斐田晴」</b>さんの楽曲情報をアーカイブした非公式ファンサイト（Song Player）です。</p>
+    
+    <p style="background: var(--plat-gray); padding: 15px; border-radius: 4px; border-left: 4px solid var(--kai-cyan); font-size: 0.95em;">
+      ※本サイトには「踊ってみた動画」やYouTube外の動画（TikTok等）は含まれておりません。歌唱・演奏を主体としたアーカイブを目指しています。
+    </p>
+
+    <p>有志による手動更新のため、データの不足や間違いが含まれる場合があります。正確な情報の蓄積にご協力いただければ幸いです。</p>
+
+    <div class="link-group">
+      <a href="https://docs.google.com/spreadsheets/d/1LSjon0YkKqFpQMUTS13vncbBC_mVK0qU0DL0VXgRDgI/edit" target="_blank" class="btn-link">
+        <span>[EDIT]</span> 楽曲管理スプレッドシート（直接編集）
+      </a>
+      <a href="https://forms.gle/7hnmiw2RZbCwq4U18" target="_blank" class="btn-link">
+        <span>[FORM]</span> 楽曲追加申請（Googleフォーム）
+      </a>
+      <a href="https://marshmallow-qa.com/k410khg97fy66u2" target="_blank" class="btn-link">
+        <span>[FEEDBACK]</span> 修正依頼・感想（マシュマロ）
+      </a>
+    </div>
+
+    <div class="thanks-box">
+      <div class="thanks-title">🚀 SPECIAL THANKS</div>
+      <p class="thanks-content">
+        当サイトのデータ構築にあたり、<a href="https://x.com/Ckf9L" target="_blank">かほ様 (@Ckf9L)</a> が作成・管理されている
+        <a href="https://docs.google.com/spreadsheets/d/12CwwvYKcp0ZiByRGclPVL1OfK_daUwckbv5j7Nf6puU/edit?usp=sharing" target="_blank">「甲斐田晴 歌った曲一覧 」</a>
+        の情報を一部活用させていただいております。多大なる貢献に深く感謝申し上げます。
+      </p>
+    </div>
+    
+    <hr>
+    
+    <div style="text-align: center;">
+      <button class="back-btn" onclick="location.href='index.html'">
+  　　　RETURN TO PLAYER
+　　　 </button>
+    </div>
+  </div>
+
+</body>
+</html>
